@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error{
+            border: 2px solid red;
+        }
+        .success{
+            border: 2px solid green;
+        }
+    </style>
+
+</head>
+<body>
+    <form onsubmit="return handleData()" action="done.html" method="post" id="form">
+        <h2>Registration Form</h2>
+
+        <div id="control-group">
+            <input id="username" type="text" name="username" placeholder="Username"></input>
+            <div id="error"></div>
+        </div>
+
+        <div id="control-group">
+        
+            <input id="email" type="text" name="email" placeholder="E-mail"></input>
+            <div id="error"></div>
+        </div>
+
+        <div id="control-group">
+        
+            <input id="phonenum" type="tel" name="phonenum" placeholder="Phone Number"></input>
+            <div id="error"></div>
+        </div>
+
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="Female"><br>
+
+        <div style="visibility:hidden; color:red; " id="chk_option_error"> 
+            Please select at least one option.
+        </div> 
+        <div id="group-flex">
+
+            <div id="control-check">
+                <label for="html">HTML</label>
+                <input id="html" type="checkbox" name="group-check"></input>
+            </div>
+
+            <div id="control-check">
+                <label for="CSS">CSS</label>
+                <input id="CSS" type="checkbox" name="group-check"></input>
+            </div>
+
+            <div id="control-check">
+                <label for="JAVASCRIPT">JAVASCRIPT</label>
+                <input id="JAVASCRIPT" type="checkbox" name="group-check"></input>
+            </div>
+        </div>
+        <br><br><button type="submit">submit</button>
+    </form>
+
+    <script src="process.js"></script>
+</body>
+</html>

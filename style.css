@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;background-color: aquamarine;
+
+}
+form{
+    width: 350px;
+    height: 370px;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 7px;
+}
+input{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+}
+#Male,#Female{
+    width: 50px;
+    height: 15px;
+}
+#HTML,#CSS,#JAVASCRIPT{
+    width: 8%;
+    height: 15px;
+}
+#control-check{
+    display: inline;
+}
